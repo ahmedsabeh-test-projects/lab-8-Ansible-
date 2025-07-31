@@ -33,3 +33,8 @@ ansible-labs/
     │   └── tag_ivolve.yaml          # SSH connection variables for group
     └── README.md                   # Lab documentation
   ```
+- Finally run your test
+```
+ansible-inventory -i inventory_aws_ec2.yaml --graph
+ansible all -i inventory_aws_ec2.yaml -m ping
+```
